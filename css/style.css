@@ -1,0 +1,154 @@
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			font-family: system-ui;
+		}
+		.cover{
+			width: 100%;
+			margin: 0 auto;
+			background: whitesmoke;
+			padding: 5px 5%;
+		}
+		header,
+		nav{
+			width: 90%;
+			margin: auto;
+			height: 50px;
+			font-size: 20px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			color: #666;
+		}
+		
+		header ul li{
+			list-style: none;
+			display: flex;
+			align-items: center;
+			float: left;
+			margin: 0 20px 0 0;
+			padding: 0 10px 0 0;
+		}
+		header ul li:first-child{
+			border-right: 2px solid;
+		}
+		header ul li span{
+			display: block;
+		    font-size: inherit;
+		    font-weight: 600;
+		    line-height: 0;
+		    font-size: 15px;
+		}
+		nav{
+			height: 80px;
+		}
+		.logo{
+			width: 15%;
+		}
+		.nav-menu,
+		.nav-right{
+			display: inherit;
+			align-items: inherit;
+		}
+		nav ul li{
+			list-style: none;
+			margin: 0 30px 0 0;
+		}
+		a{
+			text-decoration: none;
+			color: inherit;
+		}
+		form{
+			width: 90%;
+			height: 650px;
+			margin: auto;
+			position: relative;
+		}
+		.form{
+			background: whitesmoke;
+		    padding: 10px;
+		    position: absolute;
+		    width: 80%;
+		    height: 300px;
+		    left: 10%;
+		    top: 100px;
+		    display: none;
+		}
+		form h1{
+			width: 80%;
+		    margin: 50px auto;
+		    color: #419fe1;
+		    display: flex;
+		    align-items: center;
+		}
+		form h1 i{
+			font-size: 30px;
+			margin: 0 5px;
+		}
+		.form.active{
+			display: block;
+		}
+		.field{
+			padding: 5px;
+		}
+		label{
+			display: block;
+		    padding: 20px;
+		    font-size: 18px;
+		    color: #666;
+		}
+		input{
+			width: 96%;
+		    padding: 8px;
+		    border: 1px solid #ccc;
+		    margin-left: 20px;
+		    border-radius: 3px;
+		    outline: none;
+		    font-size: 16px;
+		}
+		.field>span{
+			margin-left: 20px;
+			display: block;
+			font-style: italic;
+			color: red;
+		}
+		button{
+			margin: 20px;
+		    padding: 8px 20px;
+		    width: 100px;
+		    border: none;
+		    outline: none;
+		    cursor: pointer;
+		    border-radius: 4px;
+		    background: linear-gradient( 45deg, #419fe1, cyan);
+		    color: whitesmoke;
+		    float: left;
+		    font-weight: bold;
+		    position: relative;
+		    top: 50%;
+		    left: 10%;
+		}
+		button:nth-of-type(1){
+			display: none;
+		}
+		.page-indicator{
+		    height: 50px;
+		    width: 100%;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    position: absolute;
+		    bottom: 10%;
+		}
+		em{
+			display: block;
+			width: 30px;
+			height: 30px;
+			border-radius: 30px;
+			background: #ccc;
+			margin: 0 10px;
+		}
+		em.cur-page{
+			background: linear-gradient( 45deg, royalblue, cyan);
+		}
